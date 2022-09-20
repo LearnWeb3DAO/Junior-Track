@@ -8,13 +8,19 @@ A Layer-1 blockchain (also known as the parent chain or root chain) is typically
 
 Think of Layer 1 as the standard blockchain technology we've been studying so far, and Layer 2 as extensions built on top of that blockchain to add functionality.
 
+<Quiz questionId="c6798b97-2e46-4ed8-838c-3980db60c1a8" />
+
 ### Layer 2
 
 Layer 2 refers to a secondary framework or protocol that is built on top of an existing blockchain system. Major cryptocurrency networks such as Ethereum face transaction speed and scaling difficulties. Bitcoin and Ethereum are still not able to process thousands of transactions per second. Additionally, these layer 2 solutions usually offer much better transaction fees.
 
 Layer 2 protocols are specifically designed to integrate with the underlying blockchain to improve the transaction throughput. They rely on the consensus mechanism and security of the main chain. Operations on layer 2 can often be performed independently of layer 1. This is why these are sometimes referred to as "off-chain" solutions. While the main chain / layer 1 can provide the security inherent to a blockchain, layer 2 can provide the speed.
 
+<Quiz questionId="873c0ba7-f9fd-46e0-937d-4c17fb21fa86" />
+
 Since transactions on layer 2 are happening on a different chain, a connection is periodically opened to move these transactions onto the main blockchain. This connection is sometimes called a bridge, or a channel. Therefore, a major consideration for a layer 2 solution is how transactions are validated and confirmed before being moved to the main chain.
+
+<Quiz questionId="5359066e-c857-4bb5-b2cf-ec730044da82" />
 
 ## Layer 2 Scaling Solutions
 
@@ -37,6 +43,8 @@ We will look at the following categories:
 4. Plasma
 5. Validiums
 6. Volitions
+
+<Quiz questionId="b24a100b-5cde-4cd3-ab16-8e17e60fab54" />
 
 ### State Channels
 
@@ -62,6 +70,8 @@ This approach is not without its challenges as well. The core assumption under w
 
 [State Channels on ethereum.org](https://ethereum.org/en/developers/docs/scaling/state-channels)
 
+<Quiz questionId="962d9275-8b3a-4e0e-830a-441ec264b2b8" />
+
 ### Side Chains
 
 ![](https://i.imgur.com/aAPEmI7.png)
@@ -77,6 +87,8 @@ Important to note that, unlike other solutions below, side chains are _technical
 #### Further Reading
 
 [Side chains on ethereum.org](https://ethereum.org/en/developers/docs/scaling/sidechains)
+
+<Quiz questionId="f97bf1bf-34bc-42bd-a6d7-ca0756ee4682" />
 
 ### Rollups
 
@@ -128,6 +140,8 @@ The problem with ZK rollups is that it is difficult to construct these proofs, m
 
 Furthermore, ZK proofs are often complex and therefore expensive to verify. The more operations the smart contract contains, the more expensive it is to run. In addition, smart contracts are also limited in space, so the proof must run in less than a certain number of operations.
 
+<Quiz questionId="7abc77a4-1abb-4413-9fff-366bfa75f55c" />
+
 ### Plasma
 
 ![](https://i.imgur.com/EWYDWKJ.png)
@@ -144,6 +158,8 @@ To use Plasma, you can integrate one of several projects that have implemented P
 To dive deeper into Plasma, check out the [Plasma Whitepaper](http://plasma.io/plasma.pdf).
 
 Some other useful docs about plasma are [Learn Plasma](https://www.learnplasma.org/en) and [Plasma Docs on ethereum.org](https://ethereum.org/en/developers/docs/scaling/plasma)
+
+<Quiz questionId="b6a57af1-a718-4716-9c58-db2147e29415" />
 
 ### Data-Availability
 
@@ -180,6 +196,8 @@ For example, a large trading firm may not want every single trade it makes to be
 
 Again, similar to Validiums, this is just a data-availability situation, and does not concern itself with how the transactions are executed. Typically, you can use a Volition approach with ZKR's.
 
+<Quiz questionId="192d1af2-5e34-401c-8699-b37c0fbce647" />
+
 ### Examples of Layer 2
 
 #### Immutable X
@@ -208,6 +226,8 @@ Arbitrum and Optimism differ in some low-level nitty-gritty technical details, b
 
 and many more... This is not an exhaustive list, and there are many more Layer 2 solutions out there competing for attention and market share, differing in technical details on low-level implementations. You can probably find hundreds if you look online.
 
+<Quiz questionId="51fb4879-2b17-4fe0-a529-5c52a6c6340b" />
+
 ### Recommended Watch
 
 [Ethereum Layer 2 Scaling Explained](https://youtu.be/BgCgauWVTs0)
@@ -215,6 +235,8 @@ and many more... This is not an exhaustive list, and there are many more Layer 2
 [Rollups Explained](https://youtu.be/7pWxCklcNsU)
 
 [Overview of different Scaling Solutions](https://www.youtube.com/watch?v=9pJjtEeq-N4)
+
+<Quiz questionId="926ee9f0-64ca-4770-af83-595e9840cc1b" />
 
 ## The ETH network ugprade and Layer 2's
 
@@ -236,6 +258,8 @@ Therefore, the ETH upgrade will actually help secure Layer 2 solutions gain adop
 
 ---
 
+<Quiz questionId="4f505d9a-4863-4057-a40c-266cbdf85bac" />
+
 ## Contributors
 
-**This module was built in collaboration with [Hypotenuse Labs](https://hypotenuse.ca/)**
+<SubmitQuiz />
