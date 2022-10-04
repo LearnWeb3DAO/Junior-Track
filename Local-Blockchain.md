@@ -93,7 +93,7 @@ This command starts a local blockchain node for you. You should be able to see s
 
 ![](https://i.imgur.com/NkwsCXn.png)
 
-Now, you can continue by deploying the contract to the local blockchain using Hardhat, by running `npx hardhat run scripts/sample-script.js`.
+Now, you can continue by deploying the contract to the local blockchain using Hardhat, by running `npx hardhat run scripts/deploy.js`.
 
 Alternatively, you can also use something like Remix and have it deploy contracts to your local blockchain. The second method will also involve setting up Metamask to work with your local blockchain, and will give you an idea of how to locally test your React/Next.js apps using contracts running on the local blockchain as well, so let's do that.
 
