@@ -81,6 +81,7 @@ mkdir hardhat
 cd hardhat
 npm init --yes
 npm install --save-dev hardhat
+npx hardhat
 ```
 
 Make sure you select `Create a Javascript Project` and then follow the instructions on your terminal.
