@@ -238,7 +238,7 @@ and many more... This is not an exhaustive list, and there are many more Layer 2
 
 <Quiz questionId="926ee9f0-64ca-4770-af83-595e9840cc1b" />
 
-## The ETH network ugprade and Layer 2's
+## The ETH network upgrade and Layer 2's
 
 As we get closer to the ETH network upgrade (previously referred to as Eth2), a common question to ask is "will layer 2's still be relevant?"
 
