@@ -250,6 +250,10 @@ After deploying, [The Graph's Hosted Service](https://thegraph.com/hosted-servic
 Click on your graph and make sure it says synced, if not wait for it to get synched before proceeding
 ![](https://i.imgur.com/8ESooEP.png)
 
+Now you need to supply your contract address with some Link Tokens.
+Go to [Get Link tokens](https://faucets.chain.link/mumbai) and paste your deployed contract address here to get the Link Tokens.
+And that's it. 
+
 ### Website
 
 To develop the website we would be using [React](https://reactjs.org/) and [Next Js](https://nextjs.org/). React is a javascript framework which is used to make websites and Next Js is built on top of React.
