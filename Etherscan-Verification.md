@@ -36,6 +36,7 @@ You will now need to set up your Hardhat project
 ```bash
 npm init --yes
 npm install --save-dev hardhat
+npx hardhat
 ```
 
 Make sure you select `Create a Javascript project` and then follow the steps in your terminal.
