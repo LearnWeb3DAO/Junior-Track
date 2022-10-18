@@ -37,7 +37,14 @@ You will now need to set up your Hardhat project
 npm init --yes
 npm install --save-dev hardhat
 ```
+In the same directory where you installed Hardhat run:
 
+
+
+```bash
+npx hardhat
+
+```
 Make sure you select `Create a Javascript project` and then follow the steps in your terminal.
 
 Now create a new file inside the `contracts` directory called `Verify.sol`.
