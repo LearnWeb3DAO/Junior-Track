@@ -861,6 +861,9 @@ We will now deploy your dApp, so that everyone can see your website and you can 
 - Click `Deploy`
   ![](https://i.imgur.com/rFsQpo7.png)
 
-- Now you can see your deployed website by going to your dashboard, selecting your project, and copying the `domain` from there!
+- Make sure you copy the `Queries (HTTP)` link from The Graph and select The Graph from the dropdown before submitting the link!
+
+The link should look like this (Name might be different but the link structure should be the same) :
+![Sample](https://i.imgur.com/MXtytuy.png)
 
 - Share this domain with everyone on discord and lets all play the game together 🚀🚀🚀🚀
