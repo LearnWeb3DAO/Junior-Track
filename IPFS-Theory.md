@@ -83,7 +83,7 @@ There are a few important properties that make hash functions super important:
 
 It may seem a little unintuitive at first. If output hashes are always a fixed size, but inputs can be arbitrarily large, how can we guarauntee uniqueness of outputs? Take this as an exercise into looking into how secure hashing functions are and dig deeper into it.
 
-We will not do a deep dive into hashing for now, but I will say that hashing is a probabilstic guarauntee. It is not 100% guaraunteed that each hash will be unique, but the probability of finding two separate inputs that output the same hash is EXTREMELY low.
+We will not do a deep dive into hashing for now, but I will say that hashing is a probabilistic guarauntee. It is not 100% guaraunteed that each hash will be unique, but the probability of finding two separate inputs that output the same hash is EXTREMELY low.
 
 <Quiz questionId="58bda410-a943-419f-a96c-2a757e760704" />
 
