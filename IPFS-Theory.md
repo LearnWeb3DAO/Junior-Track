@@ -81,9 +81,9 @@ There are a few important properties that make hash functions super important:
    > NOTE: This is how passwords are stored in databases. Web apps which require logging in do not store your passwords directly in the database. They store a hash of the database. When someone tries to login, their password is hashed with the same hash function, and the hash is matched against the one stored in the database.
 3. It is not possible to reverse a hash function. This means that given the hashing function `H` and the output hash `b`, you cannot figure out what `a` was. But, if you had `a`, you can check that it outputs `b` quite easily.
 
-It may seem a little unintuitive at first. If output hashes are always a fixed size, but inputs can be arbitrarily large, how can we guarauntee uniqueness of outputs? Take this as an exercise into looking into how secure hashing functions are and dig deeper into it.
+It may seem a little unintuitive at first. If output hashes are always a fixed size, but inputs can be arbitrarily large, how can we guarantee uniqueness of outputs? Take this as an exercise into looking into how secure hashing functions are and dig deeper into it.
 
-We will not do a deep dive into hashing for now, but I will say that hashing is a probabilistic guarauntee. It is not 100% guaraunteed that each hash will be unique, but the probability of finding two separate inputs that output the same hash is EXTREMELY low.
+We will not do a deep dive into hashing for now, but I will say that hashing is a probabilistic guarantee. It is not 100% guaranteed that each hash will be unique, but the probability of finding two separate inputs that output the same hash is EXTREMELY low.
 
 <Quiz questionId="58bda410-a943-419f-a96c-2a757e760704" />
 
