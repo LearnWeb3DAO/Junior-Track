@@ -100,7 +100,7 @@ For common use cases, developers can use the high-level SDK - Self.ID - which ab
 
 For complex or customized use cases, developers can work with a lower-level Ceramic HTTP Client, which connects to a Ceramic node they can run on their own (or the public nodes), and manage 3IDs and Stream data manually.
 
-For the purposes of this tutorial, we will stick with the Self.ID high-level SDK, as otherwise this tutorial will become extremely large. If you're interested in digging deeper, do check out the _Recommended Resources_ section below.
+For the purposes of this tutorial, we will stick with the Self.ID high-level SDK, as otherwise this tutorial will become extremely large. If you're interested in digging deeper, do check out their [documentation](https://developers.ceramic.network/learn/welcome/#).
 
 ### Self.ID
 
@@ -125,7 +125,7 @@ and press `Enter` for all the question prompts. This should create the `ceramic-
 Let's now install the Self.ID npm packages, and a dependent library, to get started. From inside the `ceramic-tutorial` folder, run the following in your terminal
 
 ```bash
-npm install @self.id/react @self.id/web key-did-provider-ed25519
+npm install "@self.id/react" "@self.id/web" key-did-provider-ed25519
 ```
 
 Let's also install the `ethers` and `web3modal` packages that we will be using to support wallet connections
