@@ -113,7 +113,7 @@ POLYGONSCAN_KEY="polygonscan-api-key-token-here"
 
     console.log("Sleeping.....");
     // Wait for etherscan to notice that the contract has been deployed
-    await sleep(10000);
+    await sleep(40000);
 
     // Verify the contract after deploying
     await hre.run("verify:verify", {
