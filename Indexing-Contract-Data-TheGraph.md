@@ -260,11 +260,11 @@ First, You would need to create a new `next` app. Your folder structure should l
    - RandomWinnerGame
        - graph
        - hardhat-tutorial
-       - next-app
+       - my-app
        - abi.json
 ```
 
-To create this `next-app`, in the terminal point to RandomWinnerGame folder and type
+To create this `my-app`, in the terminal point to RandomWinnerGame folder and type
 
 ```bash
     npx create-next-app@latest
