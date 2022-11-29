@@ -772,8 +772,7 @@ export default function Home() {
             type="number"
             className={styles.input}
             onChange={(e) => {
-              // The user will enter the value in ether, we will need to convert
-              // it to WEI using parseEther
+              // The user will enter the value for max players
               setMaxPlayers(e.target.value ?? 0);
             }}
             placeholder="Max players"
