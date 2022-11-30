@@ -772,7 +772,7 @@ export default function Home() {
             type="number"
             className={styles.input}
             onChange={(e) => {
-              // The user will enter the value for max players
+              // The user will enter the value for maximum players that can join the game
               setMaxPlayers(e.target.value ?? 0);
             }}
             placeholder="Max players"
