@@ -39,7 +39,7 @@ Now, we will look at a few different Layer 1 blockchains and try to compare them
 
 ![](https://i.imgur.com/QBhOJRz.png)
 
-NEAR is a Layer-1 smart contract platform that utilizes parallel sharding storage and computation technology to scale. It also uses Proof of Stake consensus, instead of Ethereum's current Proof of Work, and has over 50 validators securing millions of dollars on the network.
+NEAR is a Layer-1 smart contract platform that utilizes parallel sharding storage and computation technology to scale. It also uses Proof of Stake consensus and has over 50 validators securing millions of dollars on the network.
 
 #### What is Sharding?
 
