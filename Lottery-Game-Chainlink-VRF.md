@@ -10,7 +10,7 @@ So we can use some web2 technologies to generate the randomness and then use the
 
 ## What is an oracle?
 
-- An oracle sends data from the outside world to a blockchain's smart contract and vice-verca.
+- An oracle sends data from the outside world to a blockchain's smart contract and vice-versa.
 - Smart contract can then use this data to make a decision and change its state.
 - They act as bridges between blockchains and the external world.
 - However it is important to note that the blockchain oracle is not itself the data source but its job is to query, verify and authenticate the outside data and then further pass it to the smart contract.
