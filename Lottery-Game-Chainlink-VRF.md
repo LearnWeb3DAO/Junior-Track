@@ -58,7 +58,7 @@ The official Chainlink Docs describe VRFs as:
 - After max number of players have entered the game, one winner is chosen at random
 - The winner will get `maxplayers*entryfee` amount of ether for winning the game
 
-## BUIDL IT
+## BUILD IT
 
 Initially start by creating a folder named `RandomWinnerGame` in your computer
 
