@@ -39,7 +39,7 @@ Now, we will look at a few different Layer 1 blockchains and try to compare them
 
 ![](https://i.imgur.com/QBhOJRz.png)
 
-NEAR is a Layer-1 smart contract platform that utilizes parallel sharding storage and computation technology to scale. It also uses Proof of Stake consensus and has over 50 validators securing millions of dollars on the network.
+NEAR is a Layer-1 smart contract platform that utilizes parallel sharding storage and computation technology to scale. It also uses Proof of Stake consensus and has over 100 validators securing millions of dollars on the network.
 
 #### What is Sharding?
 
@@ -215,7 +215,7 @@ Short of creating your own subnet, the main chain that Avalanche is used for is 
 - Avalanche has faster transaction finality and is cheaper to use
 - Development on the C-Chain and Ethereum are pretty much the exact same
 - The AVAX token is hard-capped, unlike ETH which has no hard cap
-- Avalanche uses a custom Proof of Stake consensus protocol, instead of Proof of Work by Ethereum
+- Avalanche uses a custom Proof of Stake consensus protocol
 - The Avalanche C-Chain memory pool of transactions is not public, and restricted to validators. This can be problematic as block producers have significant upside in making profit off their knowledge of what is going to be included in a transaction next, e.g. by doing arbitrage on DEX trades.
 - At the time of writing, it costs upwards of $150,000 USD to stake and become a validator in Avalanche's ecosystem
 - Avalanche is less decentralized than Ethereum at the time of writing
