@@ -870,5 +870,3 @@ Make sure you copy the `Queries (HTTP)` link from The Graph and select `The Grap
 
 The link should look like this :
 ![Queries HTTP Link](https://i.imgur.com/ekQvnwa.png)
-
-- Share this domain with everyone on discord and lets all play the game together 🚀🚀🚀🚀
