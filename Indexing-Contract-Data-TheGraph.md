@@ -861,9 +861,9 @@ We will now deploy your dApp, so that everyone can see your website and you can 
 - Click `Deploy`
   ![](https://i.imgur.com/rFsQpo7.png)
 
-- Make sure you copy the `Queries (HTTP)` link from The Graph and select The Graph from the dropdown before submitting the link!
+- Make sure you copy the `Queries (HTTP)` link from The Graph and select `The Graph` from the dropdown before submitting the link to pass the level!
 
-The link should look like this (Name might be different but the link structure should be the same) :
-![Sample](https://i.imgur.com/MXtytuy.png)
+The link should look like this :
+![Queries HTTP Link](https://i.imgur.com/ekQvnwa.png)
 
 - Share this domain with everyone on discord and lets all play the game together 🚀🚀🚀🚀
