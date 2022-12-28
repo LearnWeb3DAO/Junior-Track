@@ -389,7 +389,7 @@ const FEE = ethers.utils.parseEther("0.0001");
 module.exports = { LINK_TOKEN, VRF_COORDINATOR, KEY_HASH, FEE };
 ```
 
-The values we got for this are from [here](https://docs.chain.link/docs/vrf-contracts/v1/#polygon-matic-mumbai-testnet) and are already provided to us by Chainlink
+The values we got for this are from [here](https://blog.chain.link/how-to-get-a-random-number-on-polygon) and are already provided to us by Chainlink
 
 Lets deploy the contract to `mumbai` network. Create a new file, or replace the default existing one, named `deploy.js` under the `scripts` folder.
 
