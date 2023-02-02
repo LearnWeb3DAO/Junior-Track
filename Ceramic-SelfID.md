@@ -459,6 +459,6 @@ To look at the final code for what we have built, you can visit [Github](https:/
 
 Hopefully this article could give you a sneak peek into how to use Ceramic, and help you gain an understanding of why Ceramic is important.
 
-For verification of this level, copy your entire `did:...` string from the webpage and paste it below into the verification box.
+For verification of this level, copy your entire `did:pkh:...` string from the webpage and paste it below into the verification box.
 
 Show off your website on Discord in the showcase channel, and as always, feel free to ask any questions!
