@@ -322,8 +322,10 @@ Open up a terminal pointing at`my-app` directory and execute this command
 
 In the same terminal also install `ethers.js`
 
+> Note : We install v5 specifically since the new v6 has breaking changes to the code.
+
 ```bash
-npm install ethers
+npm i ethers@5
 ```
 
 In your public folder, download this folder and all the images in it [the LW3Punks folder](https://github.com/LearnWeb3DAO/IPFS-Practical/tree/master/my-app/public/LW3punks). Make sure that the name of the downloaded folder is `LW3Punks`
