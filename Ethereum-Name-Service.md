@@ -85,8 +85,10 @@ npm install web3modal
 
 In the same terminal also install `ethers.js`
 
+> Note : We install v5 specifically since the new v6 has breaking changes to the code.
+
 ```bash
-npm install ethers
+npm install ethers@5
 ```
 
 In your my-app/public folder, download [this image](https://github.com/LearnWeb3DAO/ENS/blob/main/my-app/public/learnweb3punks.png) and rename it to `learnweb3punks.png`
