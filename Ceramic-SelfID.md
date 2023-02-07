@@ -130,8 +130,10 @@ npm install "@self.id/react" "@self.id/web" key-did-provider-ed25519
 
 Let's also install the `ethers` and `web3modal` packages that we will be using to support wallet connections
 
+> Note : We install v5 specifically since the new v6 has breaking changes to the code.
+
 ```bash
-npm install ethers web3modal
+npm install ethers@5 web3modal
 ```
 
 Open up the `ceramic-tutorial` folder in your text editor of choice, and let's get to coding.
