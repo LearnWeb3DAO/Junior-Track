@@ -18,7 +18,7 @@ youtube-dl is a free and open source download manager for video and audio from Y
 
 In October 2020, GitHub took down the youtube-dl repository, along with various other public forks of the project, based on a request from the Recording Industry Association of America (RIAA).
 
-This spurred a lot of controvery, and highlighted how open-source software and code could be taken down due to it being hosted on a centralized platform. Even though GitHub publicly reinstated that repository in November 2020 due to public backlash, it was still an indicator of how much power they have over your code.
+This spurred a lot of controversy, and highlighted how open-source software and code could be taken down due to it being hosted on a centralized platform. Even though GitHub publicly reinstated that repository in November 2020 due to public backlash, it was still an indicator of how much power they have over your code.
 
 ## Banned Accounts
 
