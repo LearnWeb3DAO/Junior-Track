@@ -11,13 +11,13 @@ So we can use some web2 technologies to generate the randomness and then use the
 ## What is an oracle?
 
 - An oracle sends data from the outside world to a blockchain's smart contract and vice-versa.
-- Smart contract can then use this data to make a decision and change its state.
+- Smart contract can then use this data to make a decision and change it's state.
 - They act as bridges between blockchains and the external world.
-- However it is important to note that the blockchain oracle is not itself the data source but its job is to query, verify and authenticate the outside data and then further pass it to the smart contract.
+- However it is important to note that the blockchain oracle is not itself the data source but it's job is to query, verify and authenticate the outside data and then further pass it to the smart contract.
 
 Today we will learn about one of oracles named Chainlink VRF's
 
-Lets goo 🚀
+Let's goo 🚀
 
 ## Intro
 
@@ -34,7 +34,7 @@ The official Chainlink Docs describe VRFs as:
 ## How does it work?
 
 - Chainlink has two contracts that we are mostly concerned about [VRFConsumerBase.sol](https://github.com/smartcontractkit/chainlink/blob/master/contracts/src/v0.8/VRFConsumerBase.sol) and VRFCoordinator
-- VRFConsumerBase is the contract that will be calling the VRF Coordinator which is finally reponsible for publishing the randomness
+- VRFConsumerBase is the contract that will be calling the VRF Coordinator which is finally responsible for publishing the randomness
 - We will be inheriting VRFConsumerBase and will be using two functions from it:
   - requestRandomness, which makes the initial request for randomness.
   - fulfillRandomness, which is the function that receives and does something with verified randomness.
@@ -42,7 +42,7 @@ The official Chainlink Docs describe VRFs as:
 ![](https://i.imgur.com/ssQTlkc.png)
 
 - If you look at the diagram you can understand the flow, `RandomGameWinner` contract will inherit the `VRFConsumerBase` contract and will call the `requestRandomness` function within the `VRFConsumerBase`.
-- On calling that function the request to randomness starts and the `VRFConsumerBase` further calls the `VRFCoordinator` contract which is reponsible for getting the randomness back from the external world.
+- On calling that function the request to randomness starts and the `VRFConsumerBase` further calls the `VRFCoordinator` contract which is responsible for getting the randomness back from the external world.
 - After the `VRFCoordinator` has the randomness it calls the `fullFillRandomness` function within the `VRFConsumerBase` which further then selects the winner.
 - **Note the important part is that eventhough you called the `requestRandomness` function you get the randomness back in the `fullFillRandomness` function**
 
@@ -226,9 +226,9 @@ contract RandomWinnerGame is VRFConsumerBase, Ownable {
 The constructor takes in the following params:
 
 - `vrfCoordinator` which is the address of the VRFCoordinator contract
-- `linkToken` is the address of the link token which is the token in which the chainlink takes its payment
+- `linkToken` is the address of the link token which is the token in which the chainlink takes it's payment
 - `vrfFee` is the amount of link token that will be needed to send a randomness request
-- `vrfKeyHash` which is the ID of the public key against which randomness is generated. This value is responsible for generating an unique Id for our randomneses request called as `requestId`
+- `vrfKeyHash` which is the ID of the public key against which randomness is generated. This value is responsible for generating an unique Id for our randomness request called as `requestId`
 
 **(All these values are provided to us by Chainlink)**
 
@@ -318,8 +318,8 @@ This function first checks if our contract has Link token before we request for 
     }
 ```
 
-This function was inherited from `VRFConsumerBase`. It is called by `VRFCoordinator` contract after it recieves the randomness from the external world. After recieving the randomness which can be any number in the range of uint256 we decrease its range from `0 to players.length-1` using the mod operaator
-
+This function was inherited from `VRFConsumerBase`. It is called by `VRFCoordinator` contract after it receives the randomness from the external world. After receiving the randomness which can be any number in the range of uint256 we decrease it's range from `0 to players.length-1` using the mod operator
+Lets
 This selects an index for us and we use that index to retrieve the winner from the players array. It send all the ether in the contract to the winner and emits a `GameEnded event`
 
 ---
@@ -391,7 +391,7 @@ module.exports = { LINK_TOKEN, VRF_COORDINATOR, KEY_HASH, FEE };
 
 The values we got for this are from [here](https://blog.chain.link/how-to-get-a-random-number-on-polygon) and are already provided to us by Chainlink
 
-Lets deploy the contract to `mumbai` network. Create a new file, or replace the default existing one, named `deploy.js` under the `scripts` folder.
+Let's deploy the contract to `mumbai` network. Create a new file, or replace the default existing one, named `deploy.js` under the `scripts` folder.
 
 ```javascript
 const { ethers } = require("hardhat");
@@ -456,7 +456,7 @@ To deploy, open up a terminal pointing at `hardhat-tutorial` directory and execu
   npx hardhat run scripts/deploy.js --network mumbai
 ```
 
-It should have printed a link to mumbai polygonscan, your contract is now verified. Click on polygonscan link and interact with your contract there. Lets play the game on polygonscan now.
+It should have printed a link to mumbai polygonscan, your contract is now verified. Click on polygonscan link and interact with your contract there. Let's play the game on polygonscan now.
 
 In your terminal they should have printed a link to your contract if not then go to [Mumbai Polygon Scan](https://mumbai.polygonscan.com/) and search for your contract address, it should be verified
 
@@ -490,10 +490,10 @@ From the dropdown convert `Hex` to an `Address` for the first value within the G
 
 ![](https://i.imgur.com/DdQpsHL.png)
 
-Boom its done 🚀
+Boom it's done 🚀
 
 You now know how to play this game. In the next tutorial we will create a UI for this and will learn how to track these events using code itself.
 
-Lets goo 🚀🚀
+Let's goo 🚀🚀
 
 ---
