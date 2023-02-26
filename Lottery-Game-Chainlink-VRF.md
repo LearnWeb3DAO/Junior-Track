@@ -318,8 +318,8 @@ This function first checks if our contract has Link token before we request for 
     }
 ```
 
-This function was inherited from `VRFConsumerBase`. It is called by `VRFCoordinator` contract after it receives the randomness from the external world. After receiving the randomness which can be any number in the range of uint256 we decrease it's range from `0 to players.length-1` using the mod operator
-Lets
+This function was inherited from `VRFConsumerBase`. It is called by `VRFCoordinator` contract after it receives the randomness from the external world. After receiving the randomness which can be any number in the range of uint256 we decrease it's range from `0 to players.length-1` using the mod operator.
+
 This selects an index for us and we use that index to retrieve the winner from the players array. It send all the ether in the contract to the winner and emits a `GameEnded event`
 
 ---
