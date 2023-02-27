@@ -375,7 +375,7 @@ Now go to `styles` folder and replace all the contents of `Home.modules.css` fil
 }
 ```
 
-Let's now write some code to query the graph, create a new folder inside your `my-app` folder and name it `queries`. Inside the `queries` folder create a new file named `index.js` and paste the following lines of code:
+Let's write some code to query the graph, create a new folder inside your `my-app` folder and name it `queries`. Inside the `queries` folder create a new file named `index.js` and paste the following lines of code:
 
 ```javascript
 export function FETCH_CREATED_GAME() {
