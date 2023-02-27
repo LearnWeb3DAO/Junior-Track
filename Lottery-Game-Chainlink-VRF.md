@@ -11,9 +11,9 @@ So we can use some web2 technologies to generate the randomness and then use the
 ## What is an oracle?
 
 - An oracle sends data from the outside world to a blockchain's smart contract and vice-versa.
-- Smart contract can then use this data to make a decision and change it's state.
+- Smart contract can then use this data to make a decision and change its state.
 - They act as bridges between blockchains and the external world.
-- However it is important to note that the blockchain oracle is not itself the data source but it's job is to query, verify and authenticate the outside data and then further pass it to the smart contract.
+- However it is important to note that the blockchain oracle is not itself the data source but its job is to query, verify and authenticate the outside data and then further pass it to the smart contract.
 
 Today we will learn about one of oracles named Chainlink VRF's
 
@@ -226,7 +226,7 @@ contract RandomWinnerGame is VRFConsumerBase, Ownable {
 The constructor takes in the following params:
 
 - `vrfCoordinator` which is the address of the VRFCoordinator contract
-- `linkToken` is the address of the link token which is the token in which the chainlink takes it's payment
+- `linkToken` is the address of the link token which is the token in which the chainlink takes its payment
 - `vrfFee` is the amount of link token that will be needed to send a randomness request
 - `vrfKeyHash` which is the ID of the public key against which randomness is generated. This value is responsible for generating an unique Id for our randomness request called as `requestId`
 
@@ -318,7 +318,7 @@ This function first checks if our contract has Link token before we request for 
     }
 ```
 
-This function was inherited from `VRFConsumerBase`. It is called by `VRFCoordinator` contract after it receives the randomness from the external world. After receiving the randomness which can be any number in the range of uint256 we decrease it's range from `0 to players.length-1` using the mod operator.
+This function was inherited from `VRFConsumerBase`. It is called by `VRFCoordinator` contract after it receives the randomness from the external world. After receiving the randomness which can be any number in the range of uint256 we decrease its range from `0 to players.length-1` using the mod operator.
 
 This selects an index for us and we use that index to retrieve the winner from the players array. It send all the ether in the contract to the winner and emits a `GameEnded event`
 
