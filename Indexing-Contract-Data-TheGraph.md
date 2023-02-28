@@ -9,7 +9,7 @@
 - We will be using yarn which is a package manager just like npm.
 - Please install yarn from [here](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) If your computer doesn't have yarn already installed
 - Please watch this 40 minute tutorial on [GraphQL](https://www.youtube.com/watch?v=ZQL7tL2S0oQ)
-- If you dont know what axios is, Watch this short [tutorial](https://www.youtube.com/watch?v=6LyagkoRWYA)
+- If you don't know what axios is, Watch this short [tutorial](https://www.youtube.com/watch?v=6LyagkoRWYA)
 - You should have completed the [Chainlink VRF tutorial](https://github.com/LearnWeb3DAO/Chainlink-VRFs)
 
 ## How it Works
@@ -86,7 +86,7 @@ yarn deploy
 # or `npm run deploy`
 ```
 
-You can go back to [The Graph's Hosted Service](https://thegraph.com/hosted-service/) and click on `My Dashboard` you will be able to see your graph because its deployed now 🚀 👀
+You can go back to [The Graph's Hosted Service](https://thegraph.com/hosted-service/) and click on `My Dashboard` you will be able to see your graph because it's deployed now 🚀 👀
 
 ![](https://i.imgur.com/OOEbDgB.png)
 
@@ -94,7 +94,7 @@ Boom you have deployed your first graph!!!
 
 Now comes the fun part where we will modify the default code provided to us by The Graph into the code which can help us track events for our contract.
 
-**Lets get started**
+**Let's get started**
 
 Open up you `subgraph.yaml` inside the `graph` folder and add a `startBlock` to the yaml file after the `abi: RamdomWinnerGame` line, to get the startBlock you will need to go to [Mumbai PolygonScan](https://mumbai.polygonscan.com/) and search up your contract address, after that you will need to copy the block number of the block in which your contract was deployed
 
@@ -111,7 +111,7 @@ source:
 
 Your final file should look something like [this](https://github.com/LearnWeb3DAO/Graph/blob/master/graph/subgraph.yaml#L11)
 
-Okay now its time to create some `Entities`. `Entities` are objects which define the structure for how your data will be stored on `The Graph's nodes`. If you want to read more about them, click on this [link](https://thegraph.com/docs/en/developer/create-subgraph-hosted/#defining-entities)
+Okay now it's time to create some `Entities`. `Entities` are objects which define the structure for how your data will be stored on `The Graph's nodes`. If you want to read more about them, click on this [link](https://thegraph.com/docs/en/developer/create-subgraph-hosted/#defining-entities)
 
 We will need an `Entity` which can cover all the variables we have in our events so that we can keep track of all of them. Open up for `schema.graphql` file and replace the already existing lines of code with the following lines of code:
 
@@ -139,11 +139,11 @@ If you want to learn more about the types you can visit this [link](https://theg
 
 Okay, so now we have let the graph know what kind of data we will be tracking and what will it contain 🥳 🥳 🥳
 
-Now its time to query this data 🎉
+Now it's time to query this data 🎉
 
 Graph has an amazing functionality that given the `Entity` it can auto generate large chunk of code for you!!!
 
-Isn't that amazing? Lets use that functionality. In your terminal pointing to the graph directory execute this command
+Isn't that amazing? Let's use that functionality. In your terminal pointing to the graph directory execute this command
 
 ```bash
 yarn codegen
@@ -216,23 +216,23 @@ export function handleGameStarted(event: GameStarted): void {
 export function handleOwnershipTransferred(event: OwnershipTransferred): void {}
 ```
 
-Lets understand what is happening in `handleGameEnded` function
+Let's understand what is happening in `handleGameEnded` function
 
 - it takes in the `GameEnded` event and expects `void` to be returned which means nothing gets returned from the function
 - It loads a `Game` object from `Graph's` db which has an ID equal to the `gameId` that is present in the event that Graph detected
-- If an entity with the given `id` doesn't exist return from the function and dont do anything
+- If an entity with the given `id` doesn't exist return from the function and don't do anything
 - If it exists, set the winner and the requestId from the event into our Game Object(Note `GameEnded` event has the winner and requestId)
 - Then save this updated Game Object back to the `Graph's DB`
 - For each game there will be a unique `Game` object which will have a unique `gameId`
 
-Now lets see what's happening in the `handlePlayerJoined`
+Now let's see what's happening in the `handlePlayerJoined`
 
 - It loads a `Game` object from `Graph's` db which has an ID equal to the `gameId` that is present in the event that Graph detected
-- If an entity with the given `id` doesn't exist, return from the function and dont do anything
+- If an entity with the given `id` doesn't exist, return from the function and don't do anything
 - To actually update the player's array, we need to reassign the property on the entity that contains the array (i.e. players) similar to how we assign values to other properties on the entity (e.g. maxPlayers). Therefore, we need to create a temporary array which contains all of the existing entity.players elements, push to that, and reassign entity.players to be equal to the new array.
 - Then save this updated Game Object back to the `Graph's DB`
 
-- Now lets see what's happening in the `handleGameStarted`
+- Now let's see what's happening in the `handleGameStarted`
   - It loads a `Game` object from `Graph's` db which has an ID equal to the `gameId` that is present in the event that Graph detected
   - If an entity like that doesn't exist create a new one, also initialize the players array
   - Then set the maxPlayer and the entryFee from the event into our Game Object
@@ -279,8 +279,8 @@ cd my-app
 npm run dev
 ```
 
-Now lets install Web3Modal library(https://github.com/Web3Modal/web3modal). Web3Modal is an easy-to-use library to help developers add support for multiple providers in their apps with a simple customizable configuration. By default Web3Modal Library supports injected providers like (Metamask, Dapper, Gnosis Safe, Frame, Web3 Browsers, etc), You can also easily configure the library to support Portis, Fortmatic, Squarelink, Torus, Authereum, D'CENT Wallet and Arkane.
-Open up a terminal pointing at`my-app` directory and execute this command
+Now let's install Web3Modal library(https://github.com/Web3Modal/web3modal). Web3Modal is an easy-to-use library to help developers add support for multiple providers in their apps with a simple customizable configuration. By default Web3Modal Library supports injected providers like (Metamask, Dapper, Gnosis Safe, Frame, Web3 Browsers, etc), You can also easily configure the library to support Portis, Fortmatic, Squarelink, Torus, Authereum, D'CENT Wallet and Arkane.
+Open up a terminal pointing at `my-app` directory and execute this command
 
 ```bash
   npm install web3modal
@@ -294,7 +294,7 @@ In the same terminal also install `ethers.js`
 npm i ethers@5
 ```
 
-We will also be using `axios` to send requests to the graph, so lets install that
+We will also be using `axios` to send requests to the graph, so let's install that
 
 ```bash
 npm i axios
@@ -375,7 +375,7 @@ Now go to `styles` folder and replace all the contents of `Home.modules.css` fil
 }
 ```
 
-Lets now write some code to query the graph, create a new folder inside your `my-app` folder and name it `queries`. Inside the `queries` folder create a new file named `index.js` and paste the following lines of code:
+Let's write some code to query the graph, create a new folder inside your `my-app` folder and name it `queries`. Inside the `queries` folder create a new file named `index.js` and paste the following lines of code:
 
 ```javascript
 export function FETCH_CREATED_GAME() {
@@ -391,9 +391,9 @@ export function FETCH_CREATED_GAME() {
 }
 ```
 
-As you can see we created a `GraphQL` query where we said we want a `game` object where data is ordered by Id(which is the gameId) in decending order and we want the first game from this ordered data
+As you can see we created a `GraphQL` query where we said we want a `game` object where data is ordered by Id(which is the gameId) in descending order and we want the first game from this ordered data
 
-Lets simplify this with an example: Suppose you have three game objects stored inside the `The Graph's` node.
+Let's simplify this with an example: Suppose you have three game objects stored inside the `The Graph's` node.
 
 ```json
      {
@@ -422,11 +422,11 @@ Lets simplify this with an example: Suppose you have three game objects stored i
     }
 ```
 
-Now you want the latest game every single time. To get the latest game, you will first have to order them by Id and then put this data in decending order so that gameId 4 can come at the top(It will be the current game) and then we say `first:1` because we only want the gameId 4 object, we dont care about the old games.
+Now you want the latest game every single time. To get the latest game, you will first have to order them by Id and then put this data in descending order so that gameId 4 can come at the top(It will be the current game) and then we say `first:1` because we only want the gameId 4 object, we don't care about the old games.
 
-You can actually see this query working on the graph's hosted service. Lets try to do that:
+You can actually see this query working on the graph's hosted service. Let's try to do that:
 
-I have already deployed a graph, lets look at my graph and use the query to query it, Go to [this link](https://thegraph.com/hosted-service/subgraph/sneh1999/learnweb3)
+I have already deployed a graph, let's look at my graph and use the query to query it, Go to [this link](https://thegraph.com/hosted-service/subgraph/sneh1999/learnweb3)
 
 Replace the example query with our query and click on the purple play button
 
@@ -438,7 +438,7 @@ Simple right? Yes, indeed 😎
 
 You can go to your graph through `My dashboard` and do the same things 🚀, it will be fun
 
-Lets continue...
+Let's continue...
 
 It was nice doing it through the already provided UI by `Graph` but to use this on our frontend we will need to write an axios post request so that we can get this data from the graph
 
@@ -466,14 +466,14 @@ export async function subgraphQuery(query) {
 }
 ```
 
-Lets try to understand what's happening in this function
+Let's try to understand what's happening in this function
 
 It needs a `SUBGRAPH_URL`, you will need to replace "YOUR-SUBGRAPH-URL" with the url of your subgraph which you can get by going to the graph's [hosted service](https://thegraph.com/hosted-service) clicking on `My dashboard` and then on your graph. Copy the url under `Queries(HTTP)`
 ![](https://i.imgur.com/ekQvnwa.png)
 
 It then calls this url with the query that we created using axios post request
 
-Then it handles any errors and sends back the reponse if there are no errors
+Then it handles any errors and sends back the response if there are no errors
 
 Now open your `index.js` file under the `pages` folder and paste the following code, explanation of the code can be found in the comments.
 
@@ -722,7 +722,7 @@ export default function Home() {
     renderButton: Returns a button based on the state of the dapp
   */
   const renderButton = () => {
-    // If wallet is not connected, return a button which allows them to connect their wllet
+    // If wallet is not connected, return a button which allows them to connect their wallet
     if (!walletConnected) {
       return (
         <button onClick={connectWallet} className={styles.button}>
@@ -798,7 +798,7 @@ export default function Home() {
         <div>
           <h1 className={styles.title}>Welcome to Random Winner Game!</h1>
           <div className={styles.description}>
-            Its a lottery game where a winner is chosen at random and wins the
+            It's a lottery game where a winner is chosen at random and wins the
             entire lottery pool
           </div>
           {renderButton()}
@@ -863,7 +863,7 @@ We will now deploy your dApp, so that everyone can see your website and you can 
   ![](https://i.imgur.com/rFsQpo7.png)
 - Now you can see your deployed website by going to your dashboard, selecting your project, and copying the domain from there!
 
-Share this domain with everyone on discord and lets all play the game together 🚀🚀🚀🚀
+Share this domain with everyone on discord and let's all play the game together 🚀🚀🚀🚀
 
 ## Completion
 
