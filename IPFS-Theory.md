@@ -50,7 +50,7 @@ Additionally, location addressing means that the same data can be stored at diff
 
 Have you ever saved `download.pdf` and `download(1).pdf` on your computer?
 
-Since content does not tie into location directly, the centralized web is a mess of data that is redudantly saved multiple times under different names at different URL's, and there is no way to tell which items are the same.
+Since content does not tie into location directly, the centralized web is a mess of data that is redundantly saved multiple times under different names at different URL's, and there is no way to tell which items are the same.
 
 <Quiz questionId="a5090868-926a-4db0-b5af-80f99625b9dd" />
 
@@ -163,7 +163,7 @@ This can be particularly useful for citizens living in highly authoritative nati
 
 #### Data marketplaces
 
-Projects like Filecoin, which is also from Protocol Labs, extends the IPFS network to include incentives for data storers. At a fraction of the cost of hosting data in centralized cloud providers like AWS, you can pay miners of the Filecoin network to host your data. In exchange for the guaruantee of data availability, you pay them in $FIL tokens, and get a decentralized and reliable data storage network for cheaper than centralized solutions.
+Projects like Filecoin, which is also from Protocol Labs, extends the IPFS network to include incentives for data storers. At a fraction of the cost of hosting data in centralized cloud providers like AWS, you can pay miners of the Filecoin network to host your data. In exchange for the guarantee of data availability, you pay them in $FIL tokens, and get a decentralized and reliable data storage network for cheaper than centralized solutions.
 
 #### NFT Metadata
 
@@ -179,7 +179,7 @@ Lots of organizations have huge datasets. When I say huge, I mean like petabytes
 
 #### Offline Data Sharing
 
-Since IPFS is a peer to peer protocol, it can be configured to work on a variety of transport protocols. So far we have been assuming that data on IPFS is transfered over the HTTP(S) protocol, which requires an internet connection. However, you can configure IPFS to instead work over Bluetooth, or Radio Signals, or other types of signals. This can be useful in disaster struck areas or low connectivity areas to enable data sharing within a community that lacks internet access.
+Since IPFS is a peer to peer protocol, it can be configured to work on a variety of transport protocols. So far we have been assuming that data on IPFS is transferred over the HTTP(S) protocol, which requires an internet connection. However, you can configure IPFS to instead work over Bluetooth, or Radio Signals, or other types of signals. This can be useful in disaster struck areas or low connectivity areas to enable data sharing within a community that lacks internet access.
 
 <Quiz questionId="8eb68da1-736b-4b1a-bb71-d06d7da46922" />
 
