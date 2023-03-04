@@ -1,6 +1,6 @@
 # Create an NFT Collection with metadata stored on IPFS
 
-Now it's time for you to launch your own NFT collection and store it's metadata on IPFS
+Now it's time for you to launch your own NFT collection and store its metadata on IPFS
 
 ![](https://i.imgur.com/3BdOj89.png)
 
@@ -203,7 +203,7 @@ npm install dotenv
 
 Create a `.env` file in the `hardhat` folder and add the following lines. Follow the instructions below:
 
-Go to [Quicknode](https://www.quicknode.com/?utm_source=learnweb3&utm_campaign=generic&utm_content=sign-up&utm_medium=learnweb3) and sign up for an account. If you already have an account, log in. Quicknode is a node provider that let's you connect to various different blockchains. We will be using it to deploy our contract through Hardhat. After creating an account, `Create an endpoint` on Quicknode, select `Polygon`, and then select the `Mumbai` network. Click `Continue` in the bottom right and then click on `Create Endpoint`. Copy the link given to you in `HTTP Provider` and add it to the `.env` file below for `QUICKNODE_HTTP_URL`.
+Go to [Quicknode](https://www.quicknode.com/?utm_source=learnweb3&utm_campaign=generic&utm_content=sign-up&utm_medium=learnweb3) and sign up for an account. If you already have an account, log in. Quicknode is a node provider that lets you connect to various different blockchains. We will be using it to deploy our contract through Hardhat. After creating an account, `Create an endpoint` on Quicknode, select `Polygon`, and then select the `Mumbai` network. Click `Continue` in the bottom right and then click on `Create Endpoint`. Copy the link given to you in `HTTP Provider` and add it to the `.env` file below for `QUICKNODE_HTTP_URL`.
 
 > NOTE: If you previously set up a Mumbai endpoint, you can keep using that one. If you have any other endpoints from the past, you need to delete it to create a new one.
 
@@ -551,7 +551,8 @@ export default function Home() {
       </button>
     );
   };
-
+  
+  // Using HTML Entities for the apostrophe
   return (
     <div>
       <Head>
