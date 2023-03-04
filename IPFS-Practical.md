@@ -551,8 +551,7 @@ export default function Home() {
       </button>
     );
   };
-  
-  // Using HTML Entities for the apostrophe
+ 
   return (
     <div>
       <Head>
@@ -564,6 +563,7 @@ export default function Home() {
         <div>
           <h1 className={styles.title}>Welcome to LW3Punks!</h1>
           <div className={styles.description}>
+            {/* Using HTML Entities for the apostrophe */}
             It&#39;s an NFT collection for LearnWeb3 students.
           </div>
           <div className={styles.description}>
