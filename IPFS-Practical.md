@@ -1,6 +1,6 @@
 # Create an NFT Collection with metadata stored on IPFS
 
-Now its time for you to launch your own NFT collection and store its metadata on IPFS
+Now it's time for you to launch your own NFT collection and store its metadata on IPFS
 
 ![](https://i.imgur.com/3BdOj89.png)
 
@@ -12,7 +12,7 @@ Now its time for you to launch your own NFT collection and store its metadata on
 - There should be a website for your NFT Collection.
 - The NFT contract should be deployed on Mumbai testnet
 
-Lets start building 🚀
+Let's start building 🚀
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ Now you should be able to see a `CID` for your folder, Awesome!
 ![](https://i.imgur.com/LiQdL75.png)
 
 You can check that it actually got uploaded to IPFS is by opening this up:
-`https://ipfs.io/ipfs/your-nft-folder-cid` replace `your-nft-folder-cid` with the CID you recieved from pinata.
+`https://ipfs.io/ipfs/your-nft-folder-cid` replace `your-nft-folder-cid` with the CID you received from pinata.
 
 The images for your NFT's have now been uploaded to IPFS but just having images is not enough, each NFT should also have associated metadata
 
@@ -53,9 +53,9 @@ Now each NFT's metadata has been uploaded to IPFS and pinata should have generat
 ![](https://i.imgur.com/zm39qFx.png)
 
 You can check that it actually got uploaded to IPFS is by opening this up:
-`https://ipfs.io/ipfs/your-metadata-folder-cid` replace `your-metadata-folder-cid` with the CID you recieved from pinata.
+`https://ipfs.io/ipfs/your-metadata-folder-cid` replace `your-metadata-folder-cid` with the CID you received from pinata.
 
-Copy this CID and store it on your notepad, you will need this futher down in the tutorial
+Copy this CID and store it on your notepad, you will need this further down in the tutorial
 
 ### Contract
 
@@ -92,7 +92,7 @@ In the same terminal now install `@openzeppelin/contracts` as we would be import
 npm install @openzeppelin/contracts
 ```
 
-Now lets create a new file inside the `nft-ipfs/hardhat/contracts` directory and call it `LW3Punks.sol`
+Now let's create a new file inside the `nft-ipfs/hardhat/contracts` directory and call it `LW3Punks.sol`
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -147,7 +147,7 @@ contract LW3Punks is ERC721Enumerable, Ownable {
     }
 
     /**
-    * @dev _baseURI overides the Openzeppelin's ERC721 implementation which by default
+    * @dev _baseURI overrides the Openzeppelin's ERC721 implementation which by default
     * returned an empty string for the baseURI
     */
     function _baseURI() internal view virtual override returns (string memory) {
@@ -155,7 +155,7 @@ contract LW3Punks is ERC721Enumerable, Ownable {
     }
 
     /**
-    * @dev tokenURI overides the Openzeppelin's ERC721 implementation for tokenURI function
+    * @dev tokenURI overrides the Openzeppelin's ERC721 implementation for tokenURI function
     * This function returns the URI from where we can extract the metadata for a given tokenId
     */
     function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
@@ -195,7 +195,7 @@ contract LW3Punks is ERC721Enumerable, Ownable {
 }
 ```
 
-Now let's install the `dotenv` package to be able to import the env file and use it in our config. Open up a terminal pointing at`hardhat` directory and execute this command
+Now let's install the `dotenv` package to be able to import the env file and use it in our config. Open up a terminal pointing at `hardhat` directory and execute this command
 
 ```bash
 npm install dotenv
@@ -217,7 +217,7 @@ QUICKNODE_HTTP_URL="add-quicknode-http-provider-url-here"
 PRIVATE_KEY="add-the-private-key-here"
 ```
 
-Lets deploy the contract to `mumbai` network. Create a new file, or replace the existing default one, named `deploy.js` under the `scripts` folder. Remember to replace `YOUR-METADATA-CID` with the CID you saved to your notepad.
+Let's deploy the contract to `mumbai` network. Create a new file, or replace the existing default one, named `deploy.js` under the `scripts` folder. Remember to replace `YOUR-METADATA-CID` with the CID you saved to your notepad.
 
 ```javascript
 const { ethers } = require("hardhat");
@@ -282,7 +282,7 @@ To deploy, open up a terminal pointing at `hardhat` directory and execute this c
   npx hardhat run scripts/deploy.js --network mumbai
 ```
 
-Save the LW3Punks contract address that was printed on your terminal in your notepad, you would need it futher down in the tutorial.
+Save the LW3Punks contract address that was printed on your terminal in your notepad, you would need it further down in the tutorial.
 
 ### Website
 
@@ -313,8 +313,8 @@ npm run dev
 
 Now go to `http://localhost:3000`, your app should be running 🤘
 
-Now lets install [Web3Modal library](https://github.com/Web3Modal/web3modal). Web3Modal is an easy-to-use library to help developers add support for multiple providers in their apps with a simple customizable configuration. By default Web3Modal Library supports injected providers like (Metamask, Dapper, Gnosis Safe, Frame, Web3 Browsers, etc), You can also easily configure the library to support Portis, Fortmatic, Squarelink, Torus, Authereum, D'CENT Wallet and Arkane.
-Open up a terminal pointing at`my-app` directory and execute this command
+Now let's install [Web3Modal library](https://github.com/Web3Modal/web3modal). Web3Modal is an easy-to-use library to help developers add support for multiple providers in their apps with a simple customizable configuration. By default Web3Modal Library supports injected providers like (Metamask, Dapper, Gnosis Safe, Frame, Web3 Browsers, etc), You can also easily configure the library to support Portis, Fortmatic, Squarelink, Torus, Authereum, D'CENT Wallet and Arkane.
+Open up a terminal pointing at `my-app` directory and execute this command
 
 ```bash
   npm install web3modal
@@ -551,7 +551,7 @@ export default function Home() {
       </button>
     );
   };
-
+ 
   return (
     <div>
       <Head>
@@ -563,7 +563,8 @@ export default function Home() {
         <div>
           <h1 className={styles.title}>Welcome to LW3Punks!</h1>
           <div className={styles.description}>
-            Its an NFT collection for LearnWeb3 students.
+            {/* Using HTML Entities for the apostrophe */}
+            It&#39;s an NFT collection for LearnWeb3 students.
           </div>
           <div className={styles.description}>
             {tokenIdsMinted}/10 have been minted
