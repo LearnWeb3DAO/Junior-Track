@@ -158,6 +158,8 @@ function MyApp({ Component, pageProps }) {
     </Provider>
   );
 }
+
+export default MyApp;
 ```
 
 We also specified a configuration option for the Provider. Specifically, we said that we want the Provider to connect to the Clay Test Network for Ceramic.
