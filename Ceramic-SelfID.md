@@ -12,7 +12,7 @@ In the past few years, we have seen Web3 trends like DeFi, NFTs, and more recent
 
 Ceramic allows you to bring that same type of composability to data on the internet. This can be any kind of data. Profiles, social connections, blog posts, identities, reputation, game assets, etc.
 
-This is an abstract concept, and it is a bit tricky to try and define Ceramic Network as a single thing. Similar to Ethereum, which by itself is hard to define (what does it even mean to be a smart contract plaform?), it is easier to understand if we look at specific use cases that Ceramic can enable and examples of a vision for the future. Ethereum is much easier to understand when we look at exact examples like DeFi protocols, NFTs, DAOs etc - the same thinking can be applied while attempting to understand Ceramic.
+This is an abstract concept, and it is a bit tricky to try and define Ceramic Network as a single thing. Similar to Ethereum, which by itself is hard to define (what does it even mean to be a smart contract platform?), it is easier to understand if we look at specific use cases that Ceramic can enable and examples of a vision for the future. Ethereum is much easier to understand when we look at exact examples like DeFi protocols, NFTs, DAOs etc - the same thinking can be applied while attempting to understand Ceramic.
 
 ## Lack of data in Web3
 
@@ -376,7 +376,7 @@ Then, in the main body of the page, if you are connected, we display your 3ID, a
 
 So far, we can connect to Ceramic Network through Self.ID, but what about actually storing and retrieving data on Ceramic?
 
-We will consider the use case of building a decentralized profile on Ceramic. Thankfully, it is such a common use case that Self.ID comes with built in suport for creating and editing your profile. For the purposes of this tutorial, we will only set a Name to your 3ID and update it, but you can extend it to include all sorts of other properties like an avatar image, your social media links, a description, your age, gender, etc.
+We will consider the use case of building a decentralized profile on Ceramic. Thankfully, it is such a common use case that Self.ID comes with built in support for creating and editing your profile. For the purposes of this tutorial, we will only set a Name to your 3ID and update it, but you can extend it to include all sorts of other properties like an avatar image, your social media links, a description, your age, gender, etc.
 For readability, we will divide this into a second React component. This is the `RecordSetter` component we used above.
 
 Start by creating a new component in the same file. Outside your `Home` function, create a new function like this
