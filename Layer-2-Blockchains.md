@@ -216,7 +216,7 @@ We will have more practical examples of using Polygon in future modules.
 
 #### Optimism
 
-[Optimism](https://www.optimism.io/) is also an optimistic rollup solution for general purpose smart contracts on Ethereum. It is also EVM-compatible, and develoeprs can port their existing Solidity code to Optimism.
+[Optimism](https://www.optimism.io/) is also an optimistic rollup solution for general purpose smart contracts on Ethereum. It is also EVM-compatible, and developers can port their existing Solidity code to Optimism.
 
 Arbitrum and Optimism differ in some low-level nitty-gritty technical details, but on the surface, they both operate within the same category.
 
