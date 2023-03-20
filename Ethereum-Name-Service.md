@@ -18,13 +18,13 @@ Additionally, ENS extends beyond just mapping wallet addresses to human-readable
 
 ## Requirements
 
-Its time to build something where we can use ENS. We will develop a website which can display the ENS for an address if it has one.
+It's time to build something where we can use ENS. We will develop a website which can display the ENS for an address if it has one.
 
-Lets gooo 🚀
+Let's gooo 🚀
 
 ## Setup
 
-First lets get an ENS name for your address, start by opening up [https://app.ens.domains/](https://app.ens.domains/)
+First let's get an ENS name for your address, start by opening up [https://app.ens.domains/](https://app.ens.domains/)
 
 Make sure when you open the website, your MetaMask is connected to the `Goerli Testnet` and it has some `Goerli Ether`
 
@@ -271,7 +271,8 @@ export default function Home() {
             Welcome to LearnWeb3 Punks {ens ? ens : address}!
           </h1>
           <div className={styles.description}>
-            Its an NFT collection for LearnWeb3 Punks.
+            {/* Using HTML Entities for the apostrophe */}
+            It&#39;s an NFT collection for LearnWeb3 Punks.
           </div>
           {renderButton()}
         </div>
