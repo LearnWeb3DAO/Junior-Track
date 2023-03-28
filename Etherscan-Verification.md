@@ -41,6 +41,12 @@ npx hardhat
 
 Make sure you select `Create a Javascript project` and then follow the steps in your terminal.
 
+If you are a Windows User, you'll have to add one more dependency. It is given below:
+
+```bash
+npm install --save-dev @nomicfoundation/hardhat-toolbox
+```
+
 Now create a new file inside the `contracts` directory called `Verify.sol`.
 
 ```solidity

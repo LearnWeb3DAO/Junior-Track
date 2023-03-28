@@ -87,6 +87,12 @@ In the same terminal now install `@openzeppelin/contracts` as we would be import
 npm install @openzeppelin/contracts
 ```
 
+If you are a Windows User, you'll have to add one more dependency. It is given below:
+
+```bash
+npm install --save-dev @nomicfoundation/hardhat-toolbox
+```
+
 Lastly we will install the chainlink contracts, to use Chainlink VRF
 
 ```bash
