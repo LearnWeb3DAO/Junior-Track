@@ -81,6 +81,12 @@ npx hardhat
 
 Make sure you select `Create a Javascript Project` and then follow the instructions in your terminal.
 
+If you are a Windows User, you'll have to add one more dependency. It is given below:
+
+```bash
+npm install --save-dev @nomicfoundation/hardhat-toolbox
+```
+
 In the same terminal now install `@openzeppelin/contracts` as we would be importing Openzeppelin's Contracts
 
 ```bash

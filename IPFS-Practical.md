@@ -86,6 +86,12 @@ npx hardhat
 
 Make sure you select `Create a Javascript Project` and then follow the instructions on your terminal.
 
+If you are a Windows User, you'll have to add one more dependency. It is given below:
+
+```bash
+npm install --save-dev @nomicfoundation/hardhat-toolbox
+```
+
 In the same terminal now install `@openzeppelin/contracts` as we would be importing [Openzeppelin's ERC721Enumerable Contract](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/extensions/ERC721Enumerable.sol) in our `LW3Punks` contract.
 
 ```bash
