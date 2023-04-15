@@ -93,7 +93,7 @@ npm install ethers@5
 
 In your my-app/public folder, download [this image](https://github.com/LearnWeb3DAO/ENS/blob/main/my-app/public/learnweb3punks.png) and rename it to `learnweb3punks.png`
 
-Now go to the `styles` folder and replace all the contents of `Home.modules.css` file with the following code, this would add some styling to your dapp:
+Now go to the `styles` folder and replace all the contents of `Home.module.css` file with the following code, this would add some styling to your dapp:
 
 ```css
 .main {
