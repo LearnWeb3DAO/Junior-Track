@@ -70,13 +70,13 @@ graph init --contract-name RandomWinnerGame --product hosted-service GITHUB_USER
 
 ![](https://i.imgur.com/Y5NTkGD.png)
 
-For the deploy key, go to [The Graph's Hosted Service](https://thegraph.com/hosted-service/), click on `My Dashboard`, copy the `Access Token` and paste it for the `Deploy Key`
-
+For the deploy key, go to [The Graph's Hosted Service](https://thegraph.com/hosted-service/), click on `My Dashboard`, copy the `Access Token`
 ```bash
-   graph auth
+   graph auth --product hosted-service ACCESS_TOKEN 
 ```
+Replace `ACCESS_TOKEN` with the deploy key that you just copied. 
 
-![](https://i.imgur.com/CkFmiv1.png)
+<img width="604" alt="Screenshot 2023-04-17 at 1 48 38 PM" src="https://user-images.githubusercontent.com/85313109/232582651-2126203d-1711-4e44-bade-92900308bd54.png">
 
 Now the last two commands to execute are:
 
