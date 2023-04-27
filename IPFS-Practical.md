@@ -336,7 +336,7 @@ npm i ethers@5
 
 In your public folder, download this folder and all the images in it [the LW3Punks folder](https://github.com/LearnWeb3DAO/IPFS-Practical/tree/master/my-app/public/LW3punks). Make sure that the name of the downloaded folder is `LW3Punks`
 
-Now go to `styles` folder and replace all the contents of `Home.modules.css` file with the following code, this would add some styling to your dapp:
+Now go to `styles` folder and replace all the contents of `Home.module.css` file with the following code, this would add some styling to your dapp:
 
 ```css
 .main {
