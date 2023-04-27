@@ -68,7 +68,7 @@ By default, the owner of an Ownable contract is the account that deployed it, wh
 
 We would also be using an extension of ERC721 known as [ERC721 Enumerable](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/extensions/ERC721Enumerable.sol)
 
-ERC721 Enumerable is helps you to keep track of all the tokenIds in the contract and also the tokensIds held by an address for a given contract. Please have a look at the [functions](https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#ERC721Enumerable) it implements before moving ahead
+ERC721 Enumerable helps you to keep track of all the tokenIds in the contract and also the tokensIds held by an address for a given contract. Please have a look at the [functions](https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#ERC721Enumerable) it implements before moving ahead
 
 To build the smart contract we would be using [Hardhat](https://hardhat.org/). Hardhat is an Ethereum development environment and framework designed for full stack development in Solidity. In simple words you can write your smart contract, deploy them, run tests, and debug your code.
 
@@ -336,7 +336,7 @@ npm i ethers@5
 
 In your public folder, download this folder and all the images in it [the LW3Punks folder](https://github.com/LearnWeb3DAO/IPFS-Practical/tree/master/my-app/public/LW3punks). Make sure that the name of the downloaded folder is `LW3Punks`
 
-Now go to `styles` folder and replace all the contents of `Home.modules.css` file with the following code, this would add some styling to your dapp:
+Now go to `styles` folder and replace all the contents of `Home.module.css` file with the following code, this would add some styling to your dapp:
 
 ```css
 .main {
