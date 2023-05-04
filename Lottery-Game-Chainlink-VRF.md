@@ -21,7 +21,7 @@ Let's goo 🚀
 
 ## Intro
 
-- Chainlink VRF's are oracles which used to generate random values.
+- Chainlink VRF's are oracles which are used to generate random values.
 - These values are verified using cryptographic proofs.
 - These proofs prove that the results weren't tampered or manipulated by oracle operators, users, miners etc.
 - Proofs are published on-chain so that they can be verified.
