@@ -302,7 +302,7 @@ npm i axios
 
 In your public folder, download this [image](https://github.com/LearnWeb3DAO/Graph/blob/master/my-app/public/randomWinner.png) . Make sure that the name of the downloaded image is `randomWinner.png`
 
-Now go to `styles` folder and replace all the contents of `Home.modules.css` file with the following code, this would add some styling to your dapp:
+Now go to `styles` folder and replace all the contents of `Home.module.css` file with the following code, this would add some styling to your dapp:
 
 ```css
 .main {
