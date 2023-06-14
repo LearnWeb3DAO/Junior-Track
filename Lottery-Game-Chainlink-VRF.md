@@ -406,25 +406,19 @@ const { FEE, VRF_COORDINATOR, LINK_TOKEN, KEY_HASH } = require("../constants");
 
 async function main() {
   /*
- A ContractFactory in ethers.js is an abstraction used to deploy new smart contracts,
+ DeployContract in ethers.js is an abstraction used to deploy new smart contracts,
  so randomWinnerGame here is a factory for instances of our RandomWinnerGame contract.
  */
-  const randomWinnerGame = await ethers.getContractFactory("RandomWinnerGame");
-  // deploy the contract
-  const deployedRandomWinnerGameContract = await randomWinnerGame.deploy(
-    VRF_COORDINATOR,
-    LINK_TOKEN,
-    KEY_HASH,
-    FEE
-  );
+   // deploy the contract
+   const randomWinnerGame = await randomWinnerGame.deployContract(
+     "RandomWinnerGame",
+     [VRF_COORDINATOR, LINK_TOKEN, KEY_HASH, FEE]
+   );
 
-  await deployedRandomWinnerGameContract.deployed();
+  await randomWinnerGame.waitForDeployment();
 
-  // print the address of the deployed contract
-  console.log(
-    "Verify Contract Address:",
-    deployedRandomWinnerGameContract.address
-  );
+   // print the address of the deployed contract
+   console.log("Verify Contract Address:", randomWinnerGame.address);
 
   console.log("Sleeping.....");
   // Wait for etherscan to notice that the contract has been deployed
