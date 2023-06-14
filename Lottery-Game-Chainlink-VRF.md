@@ -418,7 +418,7 @@ async function main() {
   await randomWinnerGame.waitForDeployment();
 
    // print the address of the deployed contract
-   console.log("Verify Contract Address:", randomWinnerGame.address);
+   console.log("Verify Contract Address:", randomWinnerGame.target);
 
   console.log("Sleeping.....");
   // Wait for etherscan to notice that the contract has been deployed
@@ -426,7 +426,7 @@ async function main() {
 
   // Verify the contract after deploying
   await hre.run("verify:verify", {
-    address: deployedRandomWinnerGameContract.address,
+    address: randomWinnerGame.target,
     constructorArguments: [VRF_COORDINATOR, LINK_TOKEN, KEY_HASH, FEE],
   });
 }
