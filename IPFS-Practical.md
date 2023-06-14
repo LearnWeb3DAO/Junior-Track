@@ -226,25 +226,25 @@ PRIVATE_KEY="add-the-private-key-here"
 Let's deploy the contract to `mumbai` network. Create a new file, or replace the existing default one, named `deploy.js` under the `scripts` folder. Remember to replace `YOUR-METADATA-CID` with the CID you saved to your notepad.
 
 ```javascript
-const { ethers } = require("hardhat");
+const hre = require("hardhat");
 require("dotenv").config({ path: ".env" });
 
 async function main() {
   // URL from where we can extract the metadata for a LW3Punks
   const metadataURL = "ipfs://YOUR-METADATA-CID";
   /*
-  A ContractFactory in ethers.js is an abstraction used to deploy new smart contracts,
+  DeployContract in ethers.js is an abstraction used to deploy new smart contracts,
   so lw3PunksContract here is a factory for instances of our LW3Punks contract.
   */
-  const lw3PunksContract = await ethers.getContractFactory("LW3Punks");
+  // here we deploy the contract
+ const lw3PunksContract = await hre.ethers.deployContract("LW3Punks", [
+   metadataURL
+ ]);
 
-  // deploy the contract
-  const deployedLW3PunksContract = await lw3PunksContract.deploy(metadataURL);
+  await lw3PunksContract.waitForDeployment();
 
-  await deployedLW3PunksContract.deployed();
-
-  // print the address of the deployed contract
-  console.log("LW3Punks Contract Address:", deployedLW3PunksContract.address);
+ // print the address of the deployed contract
+  console.log("LW3Punks Contract Address:", lw3PunksContract.target);
 }
 
 // Call the main function and catch if there is any error
