@@ -155,6 +155,8 @@ contract RandomWinnerGame is VRFConsumerBase, Ownable {
     function startGame(uint8 _maxPlayers, uint256 _entryFee) public onlyOwner {
         // Check if there is a game already running
         require(!gameStarted, "Game is currently running");
+        // Check if _maxPlayers is greater than 0
+        require(_maxPlayers > 0, "You cannot create a game with max players limit equal 0");
         // empty the players array
         delete players;
         // set the max players for this game
