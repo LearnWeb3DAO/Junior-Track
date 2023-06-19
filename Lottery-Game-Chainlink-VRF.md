@@ -15,13 +15,13 @@ So we can use some web2 technologies to generate the randomness and then use the
 - They act as bridges between blockchains and the external world.
 - However it is important to note that the blockchain oracle is not itself the data source but its job is to query, verify and authenticate the outside data and then further pass it to the smart contract.
 
-Today we will learn about one of oracles named Chainlink VRF's
+Today we will learn about one of oracles named Chainlink VRFs
 
 Let's goo 🚀
 
 ## Intro
 
-- Chainlink VRF's are oracles which used to generate random values.
+- Chainlink VRFs are oracles which are used to generate random values.
 - These values are verified using cryptographic proofs.
 - These proofs prove that the results weren't tampered or manipulated by oracle operators, users, miners etc.
 - Proofs are published on-chain so that they can be verified.

@@ -441,7 +441,7 @@ return (
       onChange={(e) => setName(e.target.value)}
       className={styles.mt2}
     />
-    <button onClick={() => updateRecordName(name)}>Update</button>
+    <button className={styles.button} onClick={() => updateRecordName(name)}>Update</button>
   </div>
 );
 ```
